@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>Registration</title>
+
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  	<link rel="shortcut icon" type="image/icon" href="./assets/images/logo/brand-logo.png">
+
+  	<!-- full backend logic available in the premium version -->
+  
+  	<style type="text/css">
+  		body {
+				background-color: #eee;
+			}
+			select {
+				background-color: #eee;
+				border: thin solid #ddd;
+				border-radius: 2px;
+				outline: none;
+				width: 250px;
+				padding: 8px;
+			}
+			select:focus {
+				border: thin solid purple;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+  	</style>
+</head>
+<body>
+
+	<section class="form">
+	<form method="POST" action="reg.php" enctype="multipart/form-data">
+	<table align="center">
+		<tr>
+			<td>
+				<label>Brand Name</label><br>
+				<input type="text" name="b_name" placeholder="Enter Brand Name" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Brand Logo</label><br>
+				<input type="file" name="img" accept="image/*" placeholder="Enter Brand Image/Logo">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Name</label><br>
+				<input type="text" name="name" placeholder="Enter Name" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Email</label><br>
+				<input type="email" name="email" placeholder="Enter Email" required>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label>Password</label><br>
+				<input type="password" name="pass" placeholder="Enter Password" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Confirm Password</label><br>
+				<input type="password" name="cpass" placeholder="Confirm Password" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Security Question</label><br>
+				<select input type="text" name="question">
+					<option>--- Select ---</option>
+					<option>What is the name of your first pet?</option>
+					<option>What is the city where you were born?</option>
+					<option>What is the name of the place where you feel most relaxed?</otion>
+					<option>What is the one thing you cannot live without?</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Security Answer</label><br>
+				<input type="text" name="answer" placeholder="Enter Security Answer" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button type="submit" style="background-color: purple; width: 250px;">Submit</button>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding: 10px 20px;">Already have an account? <a href="login.html">Login</a></td>
+		</tr>
+	</table>
+	</form>
+
+		<section>
+      <footer align="center">
+          <p style="font-size: small; color: #ccc;">
+            &copy; All Rights Reserved. Design and Developed by
+            <a href="https://cachecoder.site" target="_blank" style="color: #888ea5;">CacheCoder</a>
+          </p>
+      </footer>
+    </section>
+    
+	</main>
+</body>
+</html>
